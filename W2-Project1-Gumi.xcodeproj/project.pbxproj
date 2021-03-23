@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		84E52D7D2608483A00F176B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E52D7C2608483A00F176B6 /* AppDelegate.swift */; };
 		84E52D7F2608483A00F176B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E52D7E2608483A00F176B6 /* SceneDelegate.swift */; };
-		84E52D812608483A00F176B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E52D802608483A00F176B6 /* ViewController.swift */; };
-		84E52D842608483A00F176B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E52D822608483A00F176B6 /* Main.storyboard */; };
 		84E52D862608483C00F176B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E52D852608483C00F176B6 /* Assets.xcassets */; };
 		84E52D892608483C00F176B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E52D872608483C00F176B6 /* LaunchScreen.storyboard */; };
+		84E52D9B2608490500F176B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E52D992608490500F176B6 /* HomeViewController.swift */; };
+		84E52D9F2608570000F176B6 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E52D9E2608570000F176B6 /* HomeView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84E52D792608483A00F176B6 /* W2-Project1-Gumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W2-Project1-Gumi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E52D7C2608483A00F176B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E52D7E2608483A00F176B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84E52D802608483A00F176B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84E52D832608483A00F176B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84E52D852608483C00F176B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E52D882608483C00F176B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E52D8A2608483C00F176B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E52D992608490500F176B6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84E52D9E2608570000F176B6 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,63 @@
 		84E52D7B2608483A00F176B6 /* W2-Project1-Gumi */ = {
 			isa = PBXGroup;
 			children = (
+				84E52D97260848D700F176B6 /* UI */,
+				84E52D96260848C500F176B6 /* Extension */,
+				84E52D95260848BE00F176B6 /* API */,
+				84E52D94260848B900F176B6 /* Resource */,
+				84E52D93260848B500F176B6 /* Data */,
 				84E52D7C2608483A00F176B6 /* AppDelegate.swift */,
 				84E52D7E2608483A00F176B6 /* SceneDelegate.swift */,
-				84E52D802608483A00F176B6 /* ViewController.swift */,
-				84E52D822608483A00F176B6 /* Main.storyboard */,
 				84E52D852608483C00F176B6 /* Assets.xcassets */,
 				84E52D872608483C00F176B6 /* LaunchScreen.storyboard */,
 				84E52D8A2608483C00F176B6 /* Info.plist */,
 			);
 			path = "W2-Project1-Gumi";
+			sourceTree = "<group>";
+		};
+		84E52D93260848B500F176B6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84E52D94260848B900F176B6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84E52D95260848BE00F176B6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		84E52D96260848C500F176B6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84E52D97260848D700F176B6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84E52D98260848E500F176B6 /* HomeView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		84E52D98260848E500F176B6 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				84E52D992608490500F176B6 /* HomeViewController.swift */,
+				84E52D9E2608570000F176B6 /* HomeView.storyboard */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +174,7 @@
 			files = (
 				84E52D892608483C00F176B6 /* LaunchScreen.storyboard in Resources */,
 				84E52D862608483C00F176B6 /* Assets.xcassets in Resources */,
-				84E52D842608483A00F176B6 /* Main.storyboard in Resources */,
+				84E52D9F2608570000F176B6 /* HomeView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E52D812608483A00F176B6 /* ViewController.swift in Sources */,
 				84E52D7D2608483A00F176B6 /* AppDelegate.swift in Sources */,
 				84E52D7F2608483A00F176B6 /* SceneDelegate.swift in Sources */,
+				84E52D9B2608490500F176B6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84E52D822608483A00F176B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84E52D832608483A00F176B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84E52D872608483C00F176B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "thanhnguyen.W2-Project1-Gumi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "thanhnguyen.W2-Project1-Gumi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
